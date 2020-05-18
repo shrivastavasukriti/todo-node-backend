@@ -2,12 +2,13 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 let Todo = new Schema({
     id: Number,
-    name: String,
+    title: String,
     desc: String,
     priority:String,
-    todo_type:String,
+    label:String,
+    status:String,
     start_date:Date,
-    end_date:Date,
+    due_date:Date,
     created_by:String,
     asignee:String,
     archieved:Boolean,
